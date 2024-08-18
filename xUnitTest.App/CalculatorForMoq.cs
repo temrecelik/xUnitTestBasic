@@ -17,7 +17,7 @@ namespace xUnitTest.App
             _calculatorService = calculatorService;
         }
 
-        public int add(int a, int b)
+        public int adding(int a, int b)
         {
             var total = _calculatorService.add(a, b);
             return total;

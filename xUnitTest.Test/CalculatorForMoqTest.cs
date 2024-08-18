@@ -30,9 +30,13 @@ namespace xUnitTest.Test
              
              _mock.Setup(x => x.add(a,b)).Returns(ExpectedTotal);
 
-            int actualTotal = CalculatorForMoq.add(a,b);
+            int actualTotal = CalculatorForMoq.adding(a,b);
 
             Assert.Equal(ExpectedTotal, actualTotal);
+
+            _mock.Verify(x => x.add(a,b),Times.Once); //if add method calls one time in adding function test is succeed;
+
+
 
         }
     }

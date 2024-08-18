@@ -11,3 +11,8 @@ the moq library.Such a test process will not go beyond its purpose.
 		Eğer test edilecek classta diğer classların  direkt concrete classından bir nesne üretip o nesne üzerinden fonksiyonlara erişilirse
 		test yazma sırasında bu erişilen fonksiyonlar moklanamaz.
 
+		Setup() Method : this method does mock operation
+
+		Verify() Method :using this method, events such as how many times the mock process runs can be determined.
+
+		
