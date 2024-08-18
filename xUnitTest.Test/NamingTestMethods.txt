@@ -1,0 +1,7 @@
+﻿Naming Test Method
+
+- the test methods are named by dividing them into 3 parts
+
+	[MehtodName_StateUnderTest_ExpectedBehavior]
+	 
+	=> add_simpleValues_returnTotalValue

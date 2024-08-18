@@ -1,0 +1,13 @@
+﻿Moq Framework
+
+-the MOQ framework is a library that mimics the behavior of classes and interfaces when writing unit tests.
+
+-Functions in one class can use functions in other classes.The purpose of unit test is to test the unit function. 
+For this reason, the values that will be returned from functions in other classes are given in a fake way using 
+the moq library.Such a test process will not go beyond its purpose.
+
+	Not1:Moklama işlemi yapılırken testini yaptığımız class içinde kullanılan diğer classlardan gelen fonksiyonlar bu classın interface'i
+	    üzerinden gelmelidir.Ve test yapılan class'a diğer class'ların interface'si Dependency injection ile injecte edilmelidir.
+		Eğer test edilecek classta diğer classların  direkt concrete classından bir nesne üretip o nesne üzerinden fonksiyonlara erişilirse
+		test yazma sırasında bu erişilen fonksiyonlar moklanamaz.
+
